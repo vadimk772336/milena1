@@ -1,0 +1,330 @@
+@import url(reset.css);
+                               /* GENERAL BEGIN*/
+*{
+	margin: 0;
+	padding: 0;
+}	
+ul {
+	list-style: none;
+}							   
+a {
+	text-decoration: none;
+}							   
+							   							   
+@font-face {
+	font-family: "OpenSans";
+	src: url(../fonts/OpenSans-Light.ttf);
+}
+body {
+	font: 13px/1.38 "OpenSans", Tahoma, sans-serif; 
+}							   				   
+                               /* GENERAL END*/
+.header {
+	background: url(../img/bg-header.png) repeat-x 0 0, url(../img/bg-header.png) repeat-x 0 100%, #3e4c54;
+}						   
+.inner-header {
+	background: url(../img/bg-inner-header.png) no-repeat 50% 100%;
+}	
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header .hdr-list li {
+	float: left;
+}
+.description {
+	font-size: 18px;
+	color: #ccc;
+	line-height: 21px;
+	margin: 21px 58px 0 21px;
+}
+.backet {
+	padding: 12px 0 12px 55px;
+	background: url(../img/backet.png) no-repeat 0 50%;
+	display: block;
+	color: #fff;
+}
+.fs18 {
+	font-size: 18px;
+}
+.info-block {
+	text-align: right;
+}
+.net-icons li {
+	float: right;
+	margin-left: 5px;
+}
+.net-icons li a {
+	height: 18px;
+	width: 18px;
+	display: block;
+	background: url(../img/sprite.png) no-repeat 0 0 ;
+	margin: 10px 0;
+}
+.net-icons li a.fb {
+	background-position: -23px 0;
+}
+.net-icons li a.vk {
+	background-position: -47px 0;
+}
+.tel {
+	font-style: 16px;
+	color: #fff;
+	display: block;
+	clear: right;
+}
+.registration  li{
+	float: right;
+	margin-left: 7px;
+}
+.registration li:first-child {
+	border-left: 1px solid #90989c;
+	padding-left: 5px ;
+}
+
+.registration  li a {
+	color: #90989c;
+	text-decoration: underline;
+	font-size: 12px;
+}
+.nav {
+	background: #1c1c1c;
+}
+.nav-inner {
+	background: url(../img/bg-nav-inner.png) no-repeat 50% 0;
+}
+nav>ul>li {
+	float: left;
+	position: relative;
+	background: url(../img/bg-nav-li.gif) no-repeat 100% 50%;
+}
+nav>ul>li>a {
+	color: #999999;
+	text-transform: uppercase;
+	padding: 15px 10px;
+	display: block;
+	transition: color .5s, background 1s;
+}
+nav>ul>li>a:hover {
+	color: #fff ;
+	background-image: linear-gradient(to top,#353535, #292929);
+}
+li>ul {
+	display: none;
+	position: absolute;
+	top: 46px;
+}
+nav>ul>li:hover ul {
+	display: block;
+	background: #353535;
+}
+li>ul>li {
+	border-top: 1px solid #fff;
+	width: 125px;
+}
+li>ul>li>a {
+	display: block;
+	text-align: center;
+	color: #fff;
+	padding: 5px;
+	
+}
+.main {
+	background: url(../img/bg-main.png) repeat-x 0 0 #fff;
+	padding: 27px 0 41px 0;
+}
+.sidebar {
+	width: 249px;
+	float: left;
+}
+.products-name a {
+	color: #6b8492;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 0 0 36px 13px;
+}
+.products-name a.active {
+	text-decoration: underline;
+}
+.sb-block .title {
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	background: #899da8;
+	padding: 3px 0 3px 9px;
+}
+.sb-block {
+	margin-bottom: 22px;
+}
+.options ul{
+	padding: 3px 0 14px 5px;
+	background: #f7f7f7;
+}
+
+
+.options .china {
+	color: #f36720;
+	padding-left: 10px;
+	background: url(../img/bg-china.png) no-repeat 0 8px;
+}
+.options .china:hover {
+	background-position: 0px -9px;
+}
+.options .reset {
+	color: #333;
+	text-decoration: underline;
+	margin-top: 21px;
+	display: block;
+}
+.сountry a, .price a, .material a{
+	color: #333;
+}
+.price li {
+	display: inline-block;
+	width: 120px;
+	margin-bottom: 4px;
+}
+.seasons li, .color li {
+	display: inline-block;
+	width: 70px;
+	margin-right: 15px;
+	margin-bottom: 4px;
+}
+.seasons ul, .size ul, .new-sale ul, .material ul, .color ul, .price ul, .сountry ul {
+	padding: 7px 0px 0px 8px;
+}
+
+.size li {
+	display: inline-block;
+	width: 68px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+.new-sale li {
+	width: 76px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.material li:first-child {
+	width: 77px;
+	display: inline-block;
+		margin-right: 10px;
+}
+.material li:last-child {
+	width: 137px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.text {
+	margin-left: 9px;
+	margin-top: 62px;
+}
+.text p {
+	margin-bottom: 15px;
+	line-height: 18px;
+	color: #666;
+}
+.text a {
+	padding-left: 14px;
+	color: #666;
+	background: url(../img/map.png) no-repeat 0 50%;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                /* clearfix */
+header:after,
+nav ul:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
